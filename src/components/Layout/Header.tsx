@@ -32,11 +32,11 @@ export const Header = ({ cart, onUpdateCartItemQuantity}: HeaderProps) => {
             />
             <header id="main-header">
                 <div id="main-title">
-                <img src="logo.png" alt="Elegant model" />
-                <h1>Elegant Context</h1>
+                    <img src="logo.png" alt="Elegant model" />
+                    <h1>Elegant Context</h1>
                 </div>
                 <p>
-                <button onClick={handleOpenCartClick}>Cart ({cartQuantity})</button>
+                    <button onClick={handleOpenCartClick}>Cart ({cartQuantity})</button>
                 </p>
             </header>
         </>

@@ -1,18 +1,11 @@
-import { DUMMY_PRODUCTS } from "../dummy-products"
-import { Product } from "./Product"
 
-
-export const Shop = ({ onAddItemToCart }: ShopProps) => {
+export const Shop = ({ children }) => {
   return (
-    <section>
+    <section id="shop">
         <h2>모두를 위한 세련된 패션</h2>
 
-        <ul>
-            {DUMMY_PRODUCTS?.map((product) => (
-                <li key={product.id}>
-                    <Product {...product} onAddToCart={onAddItemToCart} />
-                </li>
-            ))}
+        <ul id="products">
+          {children}
         </ul>
     </section>
   )

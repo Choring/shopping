@@ -19,17 +19,17 @@ export const Cart = ({items, onUpdateItemQuantity}: CartProps) => {
                 return (
                 <li key={item.id}>
                     <div>
-                    <span>{item.name}</span>
-                    <span> ({formattedPrice})</span>
+                        <span>{item.name}</span>
+                        <span> ({formattedPrice})</span>
                     </div>
                     <div className="cart-item-actions">
-                    <button onClick={() => onUpdateItemQuantity(item.id, -1)}>
-                        -
-                    </button>
-                    <span>{item.quantity}</span>
-                    <button onClick={() => onUpdateItemQuantity(item.id, 1)}>
-                        +
-                    </button>
+                        <button onClick={() => onUpdateItemQuantity(item.id, -1)}>
+                            -
+                        </button>
+                        <span>{item.quantity}</span>
+                        <button onClick={() => onUpdateItemQuantity(item.id, 1)}>
+                            +
+                        </button>
                     </div>
                 </li>
                 );

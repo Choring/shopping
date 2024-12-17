@@ -17,7 +17,7 @@ export const CartModal = forwardRef<CartModalRef,CartModalProps>(function Modal(
     })
 
     return createPortal(
-      <dialog>
+      <dialog id="modal" ref={dialog}>
         <h2>{title}</h2>
         <Cart 
           items={cartItems}
@@ -27,6 +27,6 @@ export const CartModal = forwardRef<CartModalRef,CartModalProps>(function Modal(
           {actions}
         </form>
       </dialog>,
-      document.getElementById("modal-root")!
+      document.getElementById("modal")!
     );
 });
