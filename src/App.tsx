@@ -3,7 +3,7 @@ import { Header } from "./components/Layout/Header";
 import { Footer } from "./components/Layout/Footer";
 import { Shop } from "./components/Shop";
 import { useState } from "react";
-import { DUMMY_PRODUCTS } from "./components/dummy-products";
+import { DUMMY_PRODUCTS } from "./dummy-products";
 
 function App() {
   const [shoppingCart, setShoppingCart] = useState<ShoppingCart>({

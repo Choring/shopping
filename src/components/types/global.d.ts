@@ -1,3 +1,5 @@
+import { ReactNode } from "react"
+
 export {}
 
 declare global {
@@ -29,9 +31,28 @@ declare global {
     interface ProductProps {    
         onAddToCart: () => void;
     }
-
     interface HeaderProps {
         cart: ShoppingCart;
         onUpdateCartItemQuantity: (productId:string, amount:number) => void;
+    }
+
+    interface ModalRef {
+        open: () => void;
+    }
+
+    interface CartModalProps {
+        cartItems: ShoppingCartItem[];
+        onUpdateCartItemQuantity: (productId:string, amount:number) => void;
+        title: string;
+        actions: ReactNode;
+    }
+
+    interface CartModalRef {
+        open: () => void;
+    }
+
+    interface CartProps {
+        items: ShoppingCartItem[];
+        onUpdateItemQuantity: (productId:string, amount:number) => void;
     }
 }
