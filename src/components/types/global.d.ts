@@ -28,8 +28,13 @@ declare global {
         onAddItemToCart: (id:string) => void;
     }
 
-    interface ProductProps {    
-        onAddToCart: () => void;
+    interface ProductProps {   
+        id: string;
+        image: string;
+        title: string;
+        price: number;
+        description: string; 
+        onAddToCart: (id: string) => void;
     }
     interface HeaderProps {
         cart: ShoppingCart;
