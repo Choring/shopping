@@ -33,7 +33,7 @@ export const Header = ({ cart, onUpdateCartItemQuantity}: HeaderProps) => {
             <header id="main-header">
                 <div id="main-title">
                     <img src="logo.png" alt="Elegant model" />
-                    <h1 className="font-bold">품격있는 스타일의 완성</h1>
+                    <h1 className="font-bold">품격있는 스타일의 완성</h1>
                 </div>
                 <p>
                     <button onClick={handleOpenCartClick}>🛒 ({cartQuantity})</button>

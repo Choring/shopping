@@ -17,13 +17,13 @@ export const CartModal = forwardRef<CartModalRef,CartModalProps>(function Modal(
     })
 
     return createPortal(
-      <dialog id="modal" ref={dialog}>
-        <h2>{title}</h2>
+      <dialog id="modal" className="p-6" ref={dialog}>
+        <h2 className="font-bold">{title}</h2>
         <Cart 
           items={cartItems}
           onUpdateItemQuantity={onUpdateCartItemQuantity}
         />
-        <form method="dialog" id="modal-actions">
+        <form method="dialog" id="modal-actions" className="mt-2">
           {actions}
         </form>
       </dialog>,
